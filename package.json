@@ -1,0 +1,15 @@
+{
+  "name": "parse_cp_mexico",
+  "version": "1.0.0",
+  "description": "Información sobre los estados, municipios y colonias de todo México.     En este archivo sql, encontrarás al ser ejecutado se crerá una base de datos con 3 tablas",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.11"
+  }
+}

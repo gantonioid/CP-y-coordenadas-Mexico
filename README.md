@@ -33,3 +33,45 @@
     es el 013, el municipio de Atotonilco el Alto, Jalisco tendrá el ID 14013, dichas claves 
     (14 para Jalisco y 013 para Atotonilco el Alto por ejemplo) son las que aparecen en toda institución publica, inclusive
     en el INE, ¡Verificalo!
+
+
+## Conversión a JSON
+El archivo SQL es texto... lo podemos abrir y leer.
+
+Es un script que crea y llena tres tablas
+- Estados
+- Municipios
+- CP
+
+Hay que dividirlo manualmente en 3 archivos txt para que el script TS lo estructure en JSON
+- estados.txt
+- municipios.txt
+- cp.txt
+
+El script TS product un archivo out.json que facilita la búsqueda de la información de los CP
+```json
+{
+    ...,
+    "64346": {
+        "cp": 64346,
+        "municipio": "Monterrey",
+        "estado_nombre": "Nuevo León",
+        "estado_abreviacion": "NLE",
+        "lat": "25.7532634735107",
+        "lon": "-100.3996429443359",
+        "colonias": [
+            "Hacienda Santa Clara",
+            "Cumbres Jade",
+            "Real de Cumbres",
+            "Paseo de Cumbres",
+            "Cumbres Providencia",
+            "Cumbres Renacimiento",
+            "Cumbres Rodeo",
+            "Privadas Cumbres Diamante",
+            "Cumbres San Ángel",
+            "Cima del Bosque"
+        ]
+    },
+    ...
+}
+```
